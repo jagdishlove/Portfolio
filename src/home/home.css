@@ -1,0 +1,8 @@
+.firstSection h1 {
+  padding: 0;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-size: clamp(5rem, 5vw, 3rem);
+  z-index: 10;
+}

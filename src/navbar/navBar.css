@@ -1,0 +1,111 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  background-color: black;
+  flex: 1;
+  color: white;
+  z-index: 100;
+}
+
+.nav_item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3em;
+  cursor: pointer;
+}
+
+.nav_item p {
+  opacity: 0.8;
+}
+
+.signup {
+  background: rgb(115, 73, 230);
+  letter-spacing: 1px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  opacity: 0.8;
+}
+
+.login {
+  background: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  padding: 0.5em 1em;
+  border: 2px solid rgb(115, 73, 230);
+  border-radius: 30px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  opacity: 0.8;
+}
+
+.signup:hover {
+  opacity: 1;
+}
+
+.login:hover {
+  opacity: 1;
+}
+
+.nav_item p:hover {
+  opacity: 1;
+}
+svg {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar > h3 {
+    font-size: 2rem;
+  }
+
+  .nav_item_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+    height: 90vh;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+  }
+
+  .nav_item {
+    display: none;
+  }
+  .signup {
+    opacity: 1;
+  }
+  .login {
+    opacity: 1;
+  }
+}
